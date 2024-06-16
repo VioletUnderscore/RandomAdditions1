@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "randomadditions1",
+	"version": "${version}",
+	"name": "Random Additions 1",
+	"description": "An assortment of random mod ideas VioletUnderscore's friends gave her",
+	"authors": [
+		"VioletUnderscore"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/randomadditions1/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.violetunderscore.randomadditions1.RandomAdditions1"
+		],
+		"client": [
+			"net.violetunderscore.randomadditions1.RandomAdditions1Client"
+		],
+		"fabric-datagen": [
+			"net.violetunderscore.randomadditions1.RandomAdditions1DataGenerator"
+		]
+	},
+	"mixins": [
+		"randomadditions1.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
